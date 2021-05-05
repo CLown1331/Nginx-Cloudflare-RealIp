@@ -1,10 +1,10 @@
-#Requirment
-ngx_http_realip_module
-#Use
-chmod +x nginx-realip-cloudflare.sh
-chmod +x process-ip.sh
-sudo nginx-realip-cloudflare.sh
-add include /etc/nginx/realip.conf in /etc/nginx/nginx.conf
-check nginx config is ok, sudo nginx -t
-restart nginx, sudo systemctl restart nginx
-check log,sudo tail -f /var/log/nginx/access.log
+# Requirment
+1. ngx_http_realip_module
+# Use
+1. chmod +x nginx-realip-cloudflare.sh
+2. chmod +x process-ip.sh
+3. sudo nginx-realip-cloudflare.sh
+4. add include /etc/nginx/realip.conf in /etc/nginx/nginx.conf
+5. check nginx config is ok, sudo nginx -t
+6. restart nginx, sudo systemctl restart nginx
+7. check log,sudo tail -f /var/log/nginx/access.log
